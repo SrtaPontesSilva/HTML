@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <input type="text" id="username" class="input-field" placeholder="Email ID">
+        </div>
+        
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <input type="password" id="password" class="input-field" placeholder="Password">
+        </div>
+        
+        <div class="checkbox-container">
+            <div class="remember-me">
+                <input type="checkbox" id="terms">
+                <label for="terms">Aceito os termos de uso</label>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="register()">CADASTRAR</button>
+        
+        <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+        <p id="message" class="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
